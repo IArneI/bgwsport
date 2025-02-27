@@ -7,61 +7,61 @@
   <!-- Връзка към Google Fonts за модерен шрифт Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Основен стил: градиентен фон и бял текст */
-    body {
+    /* Задаване на базови стилове и пълна височина */
+    html, body {
+      height: 100%;
       margin: 0;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
       font-family: 'Montserrat', sans-serif;
       background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
       color: #fff;
     }
+    
     .container {
-      width: 1200px;
+      flex: 1;
+      width: 100%;
+      max-width: 1200px;
       margin: 0 auto;
-    }
-    /* Заместваме навигационната лента с визуално центрирана марка */
-    header {
       padding: 20px;
+    }
+    
+    /* Header: центрирана марка */
+    header {
+      padding: 20px 0;
       text-align: center;
     }
+    
     header h1 {
       margin: 0;
       font-size: 36px;
       font-weight: 700;
     }
-    .ad-top, .ad-bottom .ad {
-      background-color: rgba(0, 0, 0, 0.3);
-      text-align: center;
-      padding: 15px 0;
-      margin: 10px 0;
-    }
-    /* Основното съдържание в три колони */
+    
+    /* Основно съдържание */
     .main-content {
-      display: flex;
-      margin: 20px 0;
-    }
-    /* Увеличаваме ширината на рекламните колони */
-    .sidebar {
-      width: 350px;
-    }
-    .sidebar .ad {
-      background-color: rgba(255, 255, 255, 0.1);
-      margin-bottom: 20px;
-      padding: 20px;
       text-align: center;
-    }
-    .center-column {
-      flex: 1;
       padding: 20px;
-      text-align: center;
     }
-    .center-column img {
-      max-width: 100%;
+    
+    .main-content img {
+      max-width: 200px;
       height: auto;
       margin-bottom: 20px;
     }
-    .center-column h2 {
+    
+    .main-content h2 {
       margin-top: 0;
+      font-size: 2em;
     }
+    
+    .main-content p {
+      font-size: 1.2em;
+    }
+    
     .action-button {
       display: inline-block;
       background-color: #007BFF;
@@ -71,98 +71,68 @@
       border-radius: 5px;
       margin-top: 20px;
     }
-    .ad-bottom {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-    .ad-bottom .ad {
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 15px;
-      width: 45%;
+    
+    /* Footer, винаги позициониран най-долу */
+    footer {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 20px 0;
       text-align: center;
+      font-size: 0.9em;
+    }
+    
+    /* Responsive настройки */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+      .main-content h2 {
+        font-size: 1.5em;
+      }
+      .main-content p {
+        font-size: 1em;
+      }
+      .action-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 24px;
+      }
+      .main-content h2 {
+        font-size: 1.3em;
+      }
+      .main-content p {
+        font-size: 0.9em;
+      }
+      .action-button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Header – само марката BgWSport е показана с модерен шрифт -->
+    <!-- Header с марката BgWSport -->
     <header>
       <h1>BgWSport</h1>
     </header>
     
-    <!-- Рекламно пространство отгоре -->
-    <div class="ad-top">
-      Advertisement Space (728x90) - Above
-    </div>
-    
-    <!-- Основно съдържание с три колони -->
+    <!-- Основно съдържание -->
     <div class="main-content">
-      <!-- Лява рекламна колона (увеличена) -->
-      <aside class="sidebar">
-        <div class="ad">
-          Advertisement Space (300x250) - Left 1
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Left 2
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Left 3
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Left 4
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Left 5
-        </div>
-      </aside>
-      
-      <!-- Централна колона с изображение и текст -->
-      <div class="center-column">
-        <img src="bssport/logo.webp" alt="Централно изображение">
-        <h2>Добре дошли в BgWSport</h2>
-        <p>Вашият портал за футбол и спортни новини</p>
-        <a class="action-button" href="#">Гледай Сега!</a>
-      </div>
-      
-      <!-- Дясна рекламна колона (увеличена) -->
-      <aside class="sidebar">
-        <div class="ad">
-          Advertisement Space (300x250) - Right 1
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Right 2
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Right 3
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Right 4
-        </div>
-        <div class="ad">
-          Advertisement Space (300x250) - Right 5
-        </div>
-      </aside>
-    </div>
-    
-    <!-- Долни реклами -->
-    <div class="ad-bottom">
-      <div class="ad">
-       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5746497789070773"
-     crossorigin="anonymous"></script>
-<!-- 1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-5746497789070773"
-     data-ad-slot="3588506199"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-      </div>
-      <div class="ad">
-        Advertisement Space (728x90) - Below 2
-      </div>
+      <img src="C:\Users\Owner\Documents\BgWSport\bssport/logo.webp" alt="Централно изображение">
+      <h2>Добре дошли в BgWSport</h2>
+      <p>Вашият портал за футбол и спортни новини</p>
+      <a class="action-button" href="#">Гледай Сега!</a>
     </div>
   </div>
+  
+  <!-- Footer, който винаги остава най-долу и няма нищо след него -->
+  <footer>
+    &copy; 2025 BgWSport. Всички права запазени.
+  </footer>
 </body>
 </html>
