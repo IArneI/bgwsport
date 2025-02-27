@@ -15,7 +15,7 @@
   <style>
     @font-face {
       font-family: 'VTF Redzone Classic';
-      src: url('Red Zone.ttf') format('truetype');
+      src: url('./font/Red Zone.ttf') format('truetype');
     }
 
     /* General Styles */
@@ -81,10 +81,7 @@
     }
 
     nav .nav-links {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+      display: none;
     }
 
     nav .nav-links a {
@@ -99,9 +96,11 @@
     }
 
     .hamburger {
-      display: none;
+      display: flex;
       flex-direction: column;
       cursor: pointer;
+      position: absolute;
+      right: 30px;
     }
 
     .hamburger div {
@@ -293,11 +292,6 @@
       <div></div>
       <div></div>
       <div></div>
-    </div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Matches</a>
-      <a href="#">News</a>
     </div>
     <div class="nav-links-mobile">
       <a href="#">Home</a>
