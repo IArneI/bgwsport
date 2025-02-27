@@ -15,7 +15,7 @@
   <style>
     @font-face {
       font-family: 'VTF Redzone Classic';
-      src: url('Red Zone.ttf') format('truetype');
+      src: url('./font/Red Zone.ttf') format('truetype');
     }
 
     /* General Styles */
@@ -358,6 +358,11 @@
     function toggleMenu() {
       const navLinksMobile = document.querySelector('.nav-links-mobile');
       navLinksMobile.classList.toggle('active');
+      if (navLinksMobile.classList.contains('active')) {
+        navLinksMobile.style.display = 'flex';
+      } else {
+        navLinksMobile.style.display = 'none';
+      }
     }
   </script>
 </body>
