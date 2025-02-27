@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://bgwsport.live/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://bgwsport.live/about</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Live Matches -->
+  <url>
+    <loc>https://bgwsport.live/live-matches</loc>
+    <priority>0.9</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+
+  <!-- News -->
+  <url>
+    <loc>https://bgwsport.live/news</loc>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://bgwsport.live/blog</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://bgwsport.live/contact</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://bgwsport.live/privacy-policy</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Terms and Conditions -->
+  <url>
+    <loc>https://bgwsport.live/terms-and-conditions</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Categories (for blog or news) -->
+  <url>
+    <loc>https://bgwsport.live/category/football</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Individual Match Pages -->
+  <url>
+    <loc>https://bgwsport.live/match/barcelona-vs-real-madrid-2025-02-28</loc>
+    <priority>0.9</priority>
+    <changefreq>never</changefreq>
+  </url>
+
+  <!-- Error Page -->
+  <url>
+    <loc>https://bgwsport.live/404</loc>
+    <priority>0.1</priority>
+    <changefreq>never</changefreq>
+  </url>
+
+</urlset>
