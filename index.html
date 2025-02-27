@@ -15,7 +15,7 @@
   <style>
     @font-face {
       font-family: 'VTF Redzone Classic';
-      src: url('Red Zone.ttf') format('truetype');
+      src: url('./font/Red Zone.ttf') format('truetype');
     }
 
     /* General Styles */
@@ -68,16 +68,23 @@
       padding: 15px 30px;
       font-size: 1.2em;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the nav bar */
+      position: relative;
     }
 
     nav .logo {
       font-size: 1.08em; /* Reduced by 40% from 1.8em */
       font-weight: 700;
       font-family: 'VTF Redzone Classic', sans-serif; /* Apply VTF Redzone Classic font */
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     nav .nav-links {
       display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
     nav .nav-links a {
@@ -89,6 +96,31 @@
 
     nav .nav-links a:hover {
       color: #feb47b; /* Hover color */
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links-mobile {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .nav-links-mobile a {
+      margin: 10px 0;
     }
 
     /* Header */
@@ -171,6 +203,18 @@
 
     /* Responsive Design */
     @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links-mobile {
+        display: flex;
+      }
+
       nav {
         flex-direction: column;
         align-items: flex-start;
@@ -238,7 +282,17 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="logo">BgWSport</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Matches</a>
+      <a href="#">News</a>
+    </div>
+    <div class="nav-links-mobile">
       <a href="#">Home</a>
       <a href="#">Matches</a>
       <a href="#">News</a>
@@ -279,5 +333,12 @@
     <a href="#">Политика за поверителност</a> | 
     <a href="#">Контакти</a>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinksMobile = document.querySelector('.nav-links-mobile');
+      navLinksMobile.style.display = navLinksMobile.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
 </body>
 </html>
