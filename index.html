@@ -72,15 +72,14 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the nav bar */
       position: relative;
       width: 100%; /* Ensure full width */
+      flex-direction: column; /* Stack logo and menu vertically */
     }
 
     nav .logo {
       font-size: 1.08em; /* Reduced by 40% from 1.8em */
       font-weight: 700;
       font-family: 'VTF Redzone Classic', sans-serif; /* Apply VTF Redzone Classic font */
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-bottom: 10px; /* Add space below the logo */
     }
 
     nav .nav-links {
@@ -104,6 +103,7 @@
       cursor: pointer;
       position: absolute;
       right: 30px;
+      top: 15px; /* Align with the top padding of nav */
     }
 
     .hamburger div {
@@ -119,7 +119,7 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin-top: 60px; /* Position lower to avoid overlap with logo */
+      margin-top: 10px; /* Position lower to avoid overlap with logo */
     }
 
     .nav-links-mobile a {
