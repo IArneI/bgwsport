@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BgWSport - Футбол &amp; Спорт</title>
+  <!-- Връзка към Google Fonts за модерен шрифт Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Основен стил: градиентен фон и бял текст */
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    /* Заместваме навигационната лента с визуално центрирана марка */
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .ad-top, .ad-bottom .ad {
+      background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 15px 0;
+      margin: 10px 0;
+    }
+    /* Основното съдържание в три колони */
+    .main-content {
+      display: flex;
+      margin: 20px 0;
+    }
+    /* Увеличаваме ширината на рекламните колони */
+    .sidebar {
+      width: 350px;
+    }
+    .sidebar .ad {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+    .center-column {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    .center-column img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .center-column h2 {
+      margin-top: 0;
+    }
+    .action-button {
+      display: inline-block;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .ad-bottom {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .ad-bottom .ad {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      width: 45%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header – само марката BgWSport е показана с модерен шрифт -->
+    <header>
+      <h1>BgWSport</h1>
+    </header>
+    
+    <!-- Рекламно пространство отгоре -->
+    <div class="ad-top">
+      Advertisement Space (728x90) - Above
+    </div>
+    
+    <!-- Основно съдържание с три колони -->
+    <div class="main-content">
+      <!-- Лява рекламна колона (увеличена) -->
+      <aside class="sidebar">
+        <div class="ad">
+          Advertisement Space (300x250) - Left 1
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Left 2
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Left 3
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Left 4
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Left 5
+        </div>
+      </aside>
+      
+      <!-- Централна колона с изображение и текст -->
+      <div class="center-column">
+        <img src="C:\Users\Owner\Documents\BgWSport\bssport/logo.webp" alt="Централно изображение">
+        <h2>Добре дошли в BgWSport</h2>
+        <p>Вашият портал за футбол и спортни новини</p>
+        <a class="action-button" href="#">Гледай Сега!</a>
+      </div>
+      
+      <!-- Дясна рекламна колона (увеличена) -->
+      <aside class="sidebar">
+        <div class="ad">
+          Advertisement Space (300x250) - Right 1
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Right 2
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Right 3
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Right 4
+        </div>
+        <div class="ad">
+          Advertisement Space (300x250) - Right 5
+        </div>
+      </aside>
+    </div>
+    
+    <!-- Долни реклами -->
+    <div class="ad-bottom">
+      <div class="ad">
+        Advertisement Space (728x90) - Below 1
+      </div>
+      <div class="ad">
+        Advertisement Space (728x90) - Below 2
+      </div>
+    </div>
+  </div>
+</body>
+</html>
