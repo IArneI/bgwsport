@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="🔥 Изберете вашия мач! 📺 Гледайте футболни мачове с едно кликване.">
+  <meta name="keywords" content="спорт, футбол, линкове, мачове, стрийминг, безплатно гледане">
+  <title>BgWSport - Избери Мач</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vtf-redzone-classic">
+
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Page Background and Base Styles */
+    body {
+      min-height: 100vh;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px; /* Space for footer */
+    }
+
+    /* Header Styles */
+    header {
+      width: 100%;
+      padding: 15px 0;
+      background: #203a43;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-family: 'VTF Redzone Classic', sans-serif;
+      font-size: 2em;
+      color: #ff7e5f;
+      text-transform: uppercase;
+    }
+
+    /* Page Title */
+    h1 {
+      font-family: 'VTF Redzone Classic', sans-serif;
+      font-size: 2.5em;
+      margin: 30px 0;
+    }
+    
+    /* Vertical Container for Boxes */
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    /* Slim Box Styles */
+    .box {
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      height: 60px;  /* Slim height */
+      padding: 0 15px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Decorative Overlay */
+    .box::before {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: rotate(45deg);
+      top: -60%;
+      left: -10%;
+    }
+    
+    /* Hover Effect for Box */
+    .box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    }
+    
+    /* Link Styles Inside Each Box */
+    .box a {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: 700;
+      z-index: 1;
+      width: 100%;
+      text-align: left;
+    }
+    
+    /* Decorative Arrow Icon on the Link */
+    .box a::after {
+      content: '➔';
+      float: right;
+      transition: transform 0.3s ease;
+    }
+    
+    .box:hover a::after {
+      transform: translateX(5px);
+    }
+    
+    /* Fixed Footer */
+    footer {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background: #203a43;
+      padding: 10px 0;
+      font-size: 0.9em;
+      color: #ccc;
+      text-align: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    footer a {
+      color: #ff7e5f;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    footer a:hover {
+      color: #feb47b;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+      .container {
+        gap: 10px;
+      }
+      .box {
+        height: 50px;
+      }
+      .box a {
+        font-size: 1em;
+      }
+      .logo {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BgWSport</div>
+  </header>
+
+  <h1>Изберете Мач</h1>
+  
+  <div class="container">
+    <div class="box">
+      <a href="#">Линк 1</a>
+    </div>
+    <div class="box">
+      <a href="#">Линк 2</a>
+    </div>
+    <div class="box">
+      <a href="#">Линк 3</a>
+    </div>
+    <div class="box">
+      <a href="#">Линк 4</a>
+    </div>
+  </div>
+  
+  <footer>
+    &copy; 2025 BgWSport. Всички права запазени. <br>
+    <a href="#">Политика за поверителност</a> | <a href="#">Контакти</a>
+  </footer>
+
+</body>
+</html>
